@@ -8,7 +8,7 @@ git config user.email "he.schaeidt@gmail.com"
 COMMIT_MESSAGE="Auto build #${TRAVIS_BUILD_NUMBER} by travis"
 
 # Get the deploy key by using Travis's stored variables to decrypt travis_blog.enc
-openssl aes-256-cbc -K $encrypted_48c6a28eef24_key -iv $encrypted_48c6a28eef24_iv -in travis_blog.enc -out travis_blog -d
+openssl aes-256-cbc -K $encrypted_48c6a28eef24_key -in travis_blog.enc -out travis_blog -d
 chmod 600 travis_blog
 eval `ssh-agent -s`
 ssh-add travis_blog
