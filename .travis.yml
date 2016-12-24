@@ -1,0 +1,14 @@
+language: go
+
+go:
+    - 1.7.x
+
+install:
+    - go get -u -v github.com/spf13/hugo
+
+script:
+    - ./script/build.sh
+
+env:
+    global:
+        - ENCRYPTION_LABEL: 48c6a28eef24

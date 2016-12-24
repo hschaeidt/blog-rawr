@@ -17,4 +17,4 @@ This will be a short story: The solution is simple, as [enzyme just uses the Tes
 in the background  as I was using manually it's quite obvious what to do.<br />
 <br />
 We can just go and call `getNodes()` on our wrapper and it's compatible with our `toMatchSnapshot()` function. This [gist](https://gist.github.com/hschaeidt/0534e948aa8e101f665e9a5d5931bf27)
-shows a quick example of the idea.
+shows a quick example of the idea.<br />
